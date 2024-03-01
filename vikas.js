@@ -61,5 +61,12 @@ function getfromSessionStorge(){
 }
 
 async function fetchUserWeatherInfo(cordinates){
+    const {lat, lon} = coordinates;
+    //make grantcontainer invisible
+    grantAccessContainer.classList.add("active");
+    //make local visible
+    loadingScreen.classList.add("active");
+
+    //API CAll
     
 }
