@@ -5,3 +5,8 @@ const grantAccessContainer = document.querySelector(".grant-location-container")
 const searchForm = document.querySelector("[data-searchForm]");
 const loadingScreen = document.querySelector(".loading-container");
 const userInfoContainer = document.querySelector(".user-info-container");
+
+//initially variables need ??
+
+let currentTab = userTab;
+const API_KEY = "21e3ee69c4a50cf1887704867cd6d709";
