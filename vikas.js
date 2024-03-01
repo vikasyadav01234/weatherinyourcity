@@ -59,3 +59,7 @@ function getfromSessionStorge(){
         fechUserWeatherInfo(coordinates);
     }
 }
+
+async function fetchUserWeatherInfo(cordinates){
+    
+}
