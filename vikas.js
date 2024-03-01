@@ -49,5 +49,12 @@ searchTab.addEventListener("click", () =>{
 });
 //check if cordinatis are alredy present in session storage
 function getfromSessionStorge(){
-
+    const localCoordinates = sessionStorage.getItem("user-coordinates");
+    if(!localCoordinates){
+        //ager local cordinates nhi mile tho
+        grantAccessContainer.classList.add("active");
+    }
+    else{
+        const coordinates = JSON.parse(localCoordinates)
+    }
 }
