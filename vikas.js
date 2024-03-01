@@ -28,6 +28,8 @@ function switchTab(clickedTab){
             //main phele search walatab per tha or ab your tab ko visible karna hai
             searchForm.classList.remove("active");
             userInfoContainer.classList.remove("active");
+            //ab main your weather tab main aa gya hu,tho weather bhi display karna padega ,so lets check local 
+            // first for cordinates if we haved saved them there
             getfromSessionStorge();
         }
 
