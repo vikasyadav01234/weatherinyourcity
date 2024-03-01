@@ -47,3 +47,7 @@ searchTab.addEventListener("click", () =>{
     console.log("Clicked on search Tab")
     switchTab(searchTab);
 });
+//check if cordinatis are alredy present in session storage
+function getfromSessionStorge(){
+
+}
