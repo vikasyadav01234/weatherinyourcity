@@ -56,5 +56,6 @@ function getfromSessionStorge(){
     }
     else{
         const coordinates = JSON.parse(localCoordinates)
+        fechUserWeatherInfo(coordinates);
     }
 }
