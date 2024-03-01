@@ -16,3 +16,8 @@ userTab.addEventListener("click", () => {
     //pass clicked tab as input parameter
     switchTab(userTab);
 });
+
+searchTab.addEventListener("click", () =>{
+    //pass clicked tab as input parameter
+    switchTab(searchTab);
+});
