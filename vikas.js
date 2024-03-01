@@ -14,6 +14,7 @@ currentTab.classList.add("current-tab");
 //switch function
 
 function switchTab(clickedTab){
+    //kya search from wala container is inviseble if yes then make it visible
     if(clickedTab != currentTab){
         currentTab.classList.remove("current-tab");
         currentTab = clickedTab;
@@ -22,6 +23,12 @@ function switchTab(clickedTab){
             userInfoContainer.classList.remove("active");
             grantAccessContainer.classList.remove("active");
             searchForm.classList.add("active");
+        }
+        else{
+            //main phele search walatab per tha or ab your tab ko visible karna hai
+            searchForm.classList.remove("active");
+            userInfoContainer.classList.remove("active");
+            getfromSessionStorge();
         }
 
     }
