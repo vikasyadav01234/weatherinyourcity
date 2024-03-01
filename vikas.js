@@ -18,6 +18,11 @@ function switchTab(clickedTab){
         currentTab.classList.remove("current-tab");
         currentTab = clickedTab;
         currentTab.classList.add("current-tab");
+        if(!searchForm.classList.contains("active")){
+            userInfoContainer.classList.remove("active");
+            grantAccessContainer.classList.remove("active");
+            searchForm.classList.add("active");
+        }
 
     }
 }
