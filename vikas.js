@@ -69,4 +69,5 @@ async function fetchUserWeatherInfo(cordinates){
 
     //API CAll
     
+    
 }
