@@ -68,6 +68,10 @@ async function fetchUserWeatherInfo(cordinates){
     loadingScreen.classList.add("active");
 
     //API CAll
-    
-    
+    try{
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${API_KEY}`);
+    }
+    catch(err){
+        
+    }
 }
