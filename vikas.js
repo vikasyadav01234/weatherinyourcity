@@ -72,6 +72,6 @@ async function fetchUserWeatherInfo(cordinates){
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${API_KEY}`);
     }
     catch(err){
-        
+        console.log("Error");
     }
 }
