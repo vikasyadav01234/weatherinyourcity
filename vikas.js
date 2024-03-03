@@ -116,8 +116,16 @@ function getLocation() {
         navigator.geolocation.getCurrentPosition(showPosition);
     }
     else{
-        
+        alert("No geolocation support available");
     }
 }
+
+function showPosition(position) {
+    const userCoordinates = {
+        lat: position.coords.latitude,
+        lon: position.coords.longitude,
+    }
+}
+
 const grantAccessButton = document.querySelector("[data-grantAccess]");
 grantAccessButton.addEventListener("click", getLocation);
