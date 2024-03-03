@@ -70,7 +70,7 @@ async function fetchUserWeatherInfo(cordinates){
 
     //API CAll
     try{
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${API_KEY}`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`);
         const data = await response.json();
 
         loadingScreen.classList.remove("active");
