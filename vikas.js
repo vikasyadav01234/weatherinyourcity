@@ -108,5 +108,5 @@ function renderWeatherInfo(weatherInfo) {
 
     windspeed.innerText = weatherInfo?.wind?.speed;
     humidity.innerText = weatherInfo?.main?.humidity;
-    
+    cloudiness.innerText = weatherInfo?.clouds?.all;
 }
