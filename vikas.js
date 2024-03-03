@@ -64,7 +64,7 @@ function getfromSessionStorge(){
 async function fetchUserWeatherInfo(cordinates){
     const {lat, lon} = coordinates;
     //make grantcontainer invisible
-    grantAccessContainer.classList.add("active");
+    grantAccessContainer.classList.remove("active");
     //make local visible
     loadingScreen.classList.add("active");
 
