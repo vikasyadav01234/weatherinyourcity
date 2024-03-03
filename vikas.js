@@ -86,4 +86,5 @@ function renderWeatherInfo(weatherInfo) {
     //fistly , we have to fetch the element
 
     const cityName = document.querySelector("[data-cityName]");
+    const countryIcon = document.querySelector("[data-countryIcon]")
 }
