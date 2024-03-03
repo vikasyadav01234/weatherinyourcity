@@ -109,9 +109,9 @@ function renderWeatherInfo(weatherInfo) {
 
     temp.innerText = `${weatherInfo?.main?.temp} °C`;
 
-    windspeed.innerText = weatherInfo?.wind?.speed;
-    humidity.innerText = weatherInfo?.main?.humidity;
-    cloudiness.innerText = weatherInfo?.clouds?.all;
+    windspeed.innerText = `${weatherInfo?.wind?.speed} m/s`;
+    humidity.innerText = `${weatherInfo?.main?.humidity}%`;
+    cloudiness.innerText = `${weatherInfo?.clouds?.all}%`;
 
 }
 function getLocation() {
