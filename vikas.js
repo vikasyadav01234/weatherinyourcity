@@ -125,6 +125,9 @@ function showPosition(position) {
         lat: position.coords.latitude,
         lon: position.coords.longitude,
     }
+
+    sessionStorage.setItem("user-coordinates", JSON.stringify(userCoordinates));
+    fetchUserWeatherInfo(userCoordinates);
 }
 
 const grantAccessButton = document.querySelector("[data-grantAccess]");
