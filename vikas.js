@@ -107,7 +107,7 @@ function renderWeatherInfo(weatherInfo) {
 
     //see again
 
-    temp.innerText = weatherInfo?.main?.temp;
+    temp.innerText = `${weatherInfo?.main?.temp} °C`;
 
     windspeed.innerText = weatherInfo?.wind?.speed;
     humidity.innerText = weatherInfo?.main?.humidity;
