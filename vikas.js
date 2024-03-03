@@ -91,5 +91,5 @@ function renderWeatherInfo(weatherInfo) {
     const weatherIcon = document.querySelector("[data-weatherIcon]");
     const temp = document.querySelector("[data-temp]");
     const windspeed = document.querySelector("[data-windspeed]");
-    
+    const humidity = document.querySelector("[data-humidity]");
 }
