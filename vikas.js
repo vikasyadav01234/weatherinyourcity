@@ -156,6 +156,8 @@ async function fechUserWeatherInfo(city){
         );
         const data = await response.json();
         loadingScreen.classList.remove("active");
+        userInfoContainer.classList.add("active");
+        renderWeatherInfo(data);
     }
     catch{
 
