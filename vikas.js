@@ -139,7 +139,7 @@ grantAccessButton.addEventListener("click", getLocation);
 const searchInput = document.querySelector("[data-searchInput]");
 searchForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    let  cityName = searchInput.ariaValueMax;
+    let  cityName = searchInput.value;
 
     if(cityName === "")
         return;
