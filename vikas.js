@@ -11,6 +11,7 @@ const userInfoContainer = document.querySelector(".user-info-container");
 let currentTab = userTab;
 const API_KEY = "21e3ee69c4a50cf1887704867cd6d709";
 currentTab.classList.add("current-tab");
+getfromSessionStorge();
 //switch function
 
 function switchTab(clickedTab){
