@@ -90,4 +90,6 @@ function renderWeatherInfo(weatherInfo) {
     const desc = document.querySelector("[data-weatherDesc]");
     const weatherIcon = document.querySelector("[data-weatherIcon]");
     const temp = document.querySelector("[data-temp]");
+    const windspeed = document.querySelector("[data-windspeed]");
+    
 }
