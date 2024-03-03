@@ -78,5 +78,12 @@ async function fetchUserWeatherInfo(cordinates){
     }
     catch(err){
         console.log("Error");
+        loadingScreen.classList.remove("active");
     }
+}
+
+function renderWeatherInfo(weatherInfo) {
+    //fistly , we have to fetch the element
+
+    const cityName = document.querySelector("[data-cityName]");
 }
