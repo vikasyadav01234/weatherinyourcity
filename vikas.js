@@ -101,4 +101,8 @@ function renderWeatherInfo(weatherInfo) {
     desc.innerText = weatherInfo?.weather?.[0]?.description;
     weatherIcon.src = `http://openweathermap.org/img/w/${weatherInfo?.weather?.[0]?.icon}.png`;
     
+
+    //see again
+
+    temp.innerText = weatherInfo?.main?.temp;
 }
