@@ -88,5 +88,6 @@ function renderWeatherInfo(weatherInfo) {
     const cityName = document.querySelector("[data-cityName]");
     const countryIcon = document.querySelector("[data-countryIcon]");
     const desc = document.querySelector("[data-weatherDesc]");
-    const weatherIcon = document.querySelector("[data-weatherIcon]")
+    const weatherIcon = document.querySelector("[data-weatherIcon]");
+    const temp = document.querySelector("[data-temp]");
 }
