@@ -66,6 +66,7 @@ h1{
 sub-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .grant-location-container{
     display: flex;
