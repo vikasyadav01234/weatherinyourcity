@@ -23,3 +23,10 @@ h1{
     text-transform: uppercase;
     padding-top: 20px;
 }
+
+.tab-container {
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
