@@ -51,3 +51,13 @@ h1{
     flex-direction: column;
     margin-block: 4rem;
 }
+
+.btn{
+    all: unset;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: var(--colorDark2);
+    cursor: pointer;
+    padding: 10px 30px;
+}
