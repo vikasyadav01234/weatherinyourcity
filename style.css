@@ -62,6 +62,11 @@ h1{
     padding: 10px 30px;
 }
 
+
+sub-container{
+    display: flex;
+    flex-direction: column;
+}
 .grant-location-container{
     display: flex;
     flex-direction: column;
