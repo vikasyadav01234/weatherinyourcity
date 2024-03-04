@@ -32,3 +32,10 @@ h1{
     display: flex;
     justify-content: space-between;
 }
+
+.tab{
+    cursor: pointer;
+    font-size: 0.875rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+}
