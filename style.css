@@ -63,9 +63,11 @@ h1{
 }
 
 .grant-location-container{
-    display: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .grant-location-container.active{
     display: flex;
 }
+
