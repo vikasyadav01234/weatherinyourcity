@@ -23,57 +23,57 @@
 
         <div class="weather-container">
             <!--grant location container-->
-            <div class="grant-location-container">
-                <img src="./Images/location.png" alt="" width="80" height="80" loading="lazy">
+            <div class="sub-container grant-location-container"
+                <img src="./Images/location.png" width="80" height="80" loading="lazy">
                 <p>Grant Location Access</p>
                 <p>Allow Access to get Weather Information</p>
                 <button class="btn" data-grantAccess>Grant Access</button>                
             </div>
             
             <!--Search form-->
-            <div class="form-container" data-searchForm>
+            <from class="form-container" data-searchForm>
                 <input placeholder="Search For City...." data-searchInput>
                 <button class="btn" type="submit">
                     <img src="./Images/search.png" width="20" alt="" height="20" loading="lazy">
                 </button>
-            </div>
+            </from>
 
             <!--loading screen container-->
-            <div class="loading-container">
-                <img src="./Images/loading.gif" width="150" alt="" height="150">
+            <div class="sub-container loading-container">
+                <img src="./Images/loading.gif" width="150" height="150">
                 <p>Loading</p>
             </div>
 
             <!--show weather info-->
-            <div class="user-info-container">
+            <div class="sub-container user-info-container">
                 <!--city name and flag-->
                 <div class="name">
                     <p data-cityName></p>
-                    <img data-countryIcon alt="">
+                    <img data-countryIcon>
                 </div>
                 <!--weather description-->
                 <p data-weatherDesc></p>
                 <!--weather Icon-->
-                <img data-weatherIcon alt="">
+                <img data-weatherIcon>
                 <!--temperature-->
                 <p data-temp></p>
                 <!--# cards -parameters-->
                 <div class="paramerter-container">
                     <!--card 1-->
                     <div class="parameter">
-                        <img src="./Images/wind.png" alt="">
+                        <img src="./Images/wind.png">
                         <p>WindSpeed</p>
                         <p data-windspeed></p>
                     </div>
                     <!--card 2-->
                     <div class="parameter">
-                        <img src="./Images/humidity.png" alt="">
+                        <img src="./Images/humidity.png">
                         <p>Humidity</p>
                         <p data-humidity></p>
                     </div>
                     <!--card 3-->
                     <div class="parameter">
-                        <img src="./Images/cloud.png" alt="">
+                        <img src="./Images/cloud.png">
                         <p>Clouds</p>
                         <p data-cloudiness></p>
                     </div>
@@ -82,9 +82,9 @@
 
         </div>
     </div>
-
+    
+    <script src="vikas.js"></script>
 
 </body>
 
-<script src="vikas.js"></script>
 </html>
