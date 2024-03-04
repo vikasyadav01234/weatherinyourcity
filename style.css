@@ -60,6 +60,7 @@ h1{
     background-color: var(--colorDark2);
     cursor: pointer;
     padding: 10px 30px;
+    margin-bottom: 10px;
 }
 
 
@@ -82,3 +83,10 @@ sub-container{
     font-weight: 600;
 }
 
+.grant-location-container p:last-of-type{
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.30rem;
+}
