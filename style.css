@@ -1,4 +1,12 @@
-.tab.current-tab{
-    background-color:rgba(219, 226, 239, 0.5);
-    border-radius: 4px;
+*,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans',sans-serif;
+}
+:root{
+    --colorDark1: #112D4E;
+    --colorDark2: #3f72AF;
+    --colorLight1: #DBE2EF;
+    --colorLight2: #F9F7F7;
 }

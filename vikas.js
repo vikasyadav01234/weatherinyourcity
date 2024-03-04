@@ -8,18 +8,18 @@ const userInfoContainer = document.querySelector(".user-info-container");
 
 //initially variables need ??
 
-let currentTab = userTab;
+let oldTab = userTab;
 const API_KEY = "21e3ee69c4a50cf1887704867cd6d709";
-currentTab.classList.add("current-tab");
-getfromSessionStorge();
+oldTab.classList.add("current-tab");
+getfromSessionStorage();
 //switch function
 
-function switchTab(clickedTab){
+function switchTab(newTab){
     //kya search from wala container is inviseble if yes then make it visible
-    if(clickedTab != currentTab){
-        currentTab.classList.remove("current-tab");
-        currentTab = clickedTab;
-        currentTab.classList.add("current-tab");
+    if(newTab != oldTab){
+        oldTab.classList.remove("current-tab");
+        oldTab = newTab;
+        oldTab.classList.add("current-tab");
         if(!searchForm.classList.contains("active")){
             userInfoContainer.classList.remove("active");
             grantAccessContainer.classList.remove("active");
@@ -31,7 +31,7 @@ function switchTab(clickedTab){
             userInfoContainer.classList.remove("active");
             //ab main your weather tab main aa gya hu,tho weather bhi display karna padega ,so lets check local 
             // first for cordinates if we haved saved them there
-            getfromSessionStorge();
+            getfromSessionStorage();
         }
 
     }
@@ -49,7 +49,7 @@ searchTab.addEventListener("click", () =>{
     switchTab(searchTab);
 });
 //check if cordinatis are alredy present in session storage
-function getfromSessionStorge(){
+function getfromSessionStorage(){
     const localCoordinates = sessionStorage.getItem("user-coordinates");
     if(!localCoordinates){
         //ager local cordinates nhi mile tho
@@ -61,7 +61,7 @@ function getfromSessionStorge(){
     }
 }
 
-async function fetchUserWeatherInfo(cordinates){
+async function fetchUserWeatherInfo(coordinates){
     const {lat, lon} = coordinates;
     //make grantcontainer invisible
     grantAccessContainer.classList.remove("active");
@@ -70,8 +70,11 @@ async function fetchUserWeatherInfo(cordinates){
 
     //API CAll
     try{
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`);
+        const response = await fetch(
+            `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
+            );
         const data = await response.json();
+        console.log("data");
 
         loadingScreen.classList.remove("active");
         userInfoContainer.classList.add("active");
@@ -103,12 +106,7 @@ function renderWeatherInfo(weatherInfo) {
     countryIcon.src = `https://flagcdn.com/144x108/${weatherInfo?.sys?.country.toLowerCase()}.png`;
     desc.innerText = weatherInfo?.weather?.[0]?.description;
     weatherIcon.src = `http://openweathermap.org/img/w/${weatherInfo?.weather?.[0]?.icon}.png`;
-    
-
-    //see again
-
     temp.innerText = `${weatherInfo?.main?.temp} °C`;
-
     windspeed.innerText = `${weatherInfo?.wind?.speed} m/s`;
     humidity.innerText = `${weatherInfo?.main?.humidity}%`;
     cloudiness.innerText = `${weatherInfo?.clouds?.all}%`;
