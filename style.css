@@ -179,3 +179,8 @@ h1 {
     font-weight: 600;
     text-transform: uppercase;
 }
+
+.parameter p:last-of-type{
+    font-size: 1rem;
+    font-weight: 200;
+}
