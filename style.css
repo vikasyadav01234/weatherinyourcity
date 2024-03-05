@@ -130,3 +130,7 @@ h1 {
     width: 90px;
     height: 90px;
 }
+
+.name p{
+    font-size: 2rem;
+}
