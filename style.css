@@ -113,3 +113,10 @@ h1 {
 .user-info-container.active{
     display: flex;
 }
+
+.name{
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+    margin-bottom: 1rem;
+}
