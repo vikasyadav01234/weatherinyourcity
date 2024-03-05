@@ -140,3 +140,8 @@ h1 {
     height: 30px;
     object-fit: contain;
 }
+
+.user-info-container p[data-temp]{
+    font-size: 2.75rem;
+    font-weight: 700;
+}
