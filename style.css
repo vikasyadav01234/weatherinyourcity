@@ -212,3 +212,7 @@ h1 {
 
     color: rgba(219, 226, 239, 0.5);
 }
+
+.form-container input:focus{
+    outline: 3px solid rgba(255, 255, 255, 0.7);
+}
