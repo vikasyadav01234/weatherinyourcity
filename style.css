@@ -134,3 +134,9 @@ h1 {
 .name p{
     font-size: 2rem;
 }
+
+.name img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
