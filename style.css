@@ -94,6 +94,7 @@ h1 {
     margin-bottom: 1.75rem;
     letter-spacing: 0.75px;
 }
+
 .loading-container{
     display: none;
 }
@@ -107,7 +108,7 @@ h1 {
 }
 
 .user-info-container{
-    display: none;
+    display:none;
 }
 
 .user-info-container.active{
@@ -122,32 +123,32 @@ h1 {
 }
 
 .user-info-container p{
-    font-size: 1.5rem;
-    font-weight: 200;
+    font-size:1.5rem;
+    font-weight:200;
 }
 
 .user-info-container img{
-    width: 90px;
-    height: 90px;
+    width:90px;
+    height:90px;
 }
 
 .name p{
-    font-size: 2rem;
+        font-size:2rem;
 }
 
 .name img{
     width: 30px;
-    height: 30px;
+    height:30px;
     object-fit: contain;
 }
 
-.user-info-container p[data-temp]{
-    font-size: 2.75rem;
-    font-weight: 700;
+.user-info-container p[data-temp] {
+    font-size:2.75rem;
+    font-weight:700;
 }
 
 .parameter-container{
-    width: 90%;
+    width:90%;
     display: flex;
     gap: 10px 20px;
     justify-content: center;
@@ -156,27 +157,26 @@ h1 {
 }
 
 .parameter{
-    width: 30%;
-    max-width: 200px;
-    background-color: rgba(219, 226, 239, 0.5);
+    width:30%;
+    max-width:200px;
+    background-color: rgba(219, 226, 239, 0.5);;
     border-radius: 5px;
-    padding: 1rem;
+    padding:1rem;
     display: flex;
     flex-direction: column;
-    gap: 5px 0;
-
-    align-items: center;
-}
+    gap:5px 0;
+    /* justify-content: space-between; */
+    align-items: center; 
+}   
 
 .parameter img{
-    width: 50px;
-    height: 50px;
+    width:50px;
+    height:50px;
 }
-
 
 .parameter p:first-of-type{
     font-size: 1.15rem;
-    font-weight: 600;
+    font-weight:600;
     text-transform: uppercase;
 }
 
@@ -187,12 +187,12 @@ h1 {
 
 .form-container{
     display: none;
-    width: 90%;
-    max-width: 550px;
-    margin: 0 auto;
+    width:90%;
+    max-width:550px;
+    margin:0 auto;
     justify-content: center;
     align-items: center;
-    gap: 0 10px;
+    gap: 0 10px; 
     margin-bottom: 3rem;
 }
 
@@ -201,18 +201,29 @@ h1 {
 }
 
 .form-container input{
-    all: unset;
+    all:unset;
     width: calc(100% - 80px);
-    height: 40px;
+    height:40px;
     padding: 0 20px;
-    background-color: rgba(219, 226, 239, 0.5);
+    background-color:rgba(219, 226, 239, 0.5);
     border-radius: 10px;
 }
-.form-container input::placeholder{
 
-    color: rgba(219, 226, 239, 0.5);
+.form-container input::placeholder{
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .form-container input:focus{
     outline: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.form-container .btn {
+    padding:unset;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-bottom:1px;
 }
