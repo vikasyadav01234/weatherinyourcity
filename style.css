@@ -94,3 +94,6 @@ h1 {
     margin-bottom: 1.75rem;
     letter-spacing: 0.75px;
 }
+.loading-container{
+    display: none;
+}
