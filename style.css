@@ -105,3 +105,11 @@ h1 {
 .loading-container p{
     text-transform: uppercase;
 }
+
+.user-info-container{
+    display: none;
+}
+
+.user-info-container.active{
+    display: flex;
+}
