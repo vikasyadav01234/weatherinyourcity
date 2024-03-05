@@ -120,3 +120,8 @@ h1 {
     gap: 0 0.5rem;
     margin-bottom: 1rem;
 }
+
+.user-info-container p{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
